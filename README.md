@@ -50,24 +50,40 @@ No judgment. No red marks. Just a better version right next to yours.
 
 ## Quick Start with Claude Code
 
-### Step 1: Copy the prompt for your language
+### Step 1: Find your language pair
 
-Browse the [`languages/`](languages/) folder and find your native language:
+Browse the [`languages/`](languages/) folder. Folders are organized by **your native language**:
 
-| Language | Folder | Copy Command |
+| I speak... | Folder | Available targets |
 |---|---|---|
-| 🇰🇷 Korean | [`languages/ko/`](languages/ko/CLAUDE.md) | `cp languages/ko/CLAUDE.md ~/.claude/CLAUDE.md` |
-| 🇯🇵 Japanese | [`languages/ja/`](languages/ja/CLAUDE.md) | `cp languages/ja/CLAUDE.md ~/.claude/CLAUDE.md` |
-| 🇨🇳 Chinese | [`languages/zh/`](languages/zh/CLAUDE.md) | `cp languages/zh/CLAUDE.md ~/.claude/CLAUDE.md` |
-| 🇪🇸 Spanish | [`languages/es/`](languages/es/CLAUDE.md) | `cp languages/es/CLAUDE.md ~/.claude/CLAUDE.md` |
-| 🇫🇷 French | [`languages/fr/`](languages/fr/CLAUDE.md) | `cp languages/fr/CLAUDE.md ~/.claude/CLAUDE.md` |
-| 🇩🇪 German | [`languages/de/`](languages/de/CLAUDE.md) | `cp languages/de/CLAUDE.md ~/.claude/CLAUDE.md` |
-| 🇵🇹 Portuguese | [`languages/pt/`](languages/pt/CLAUDE.md) | `cp languages/pt/CLAUDE.md ~/.claude/CLAUDE.md` |
-| 🇻🇳 Vietnamese | [`languages/vi/`](languages/vi/CLAUDE.md) | `cp languages/vi/CLAUDE.md ~/.claude/CLAUDE.md` |
-| 🇹🇭 Thai | [`languages/th/`](languages/th/CLAUDE.md) | `cp languages/th/CLAUDE.md ~/.claude/CLAUDE.md` |
-| 🇸🇦 Arabic | [`languages/ar/`](languages/ar/CLAUDE.md) | `cp languages/ar/CLAUDE.md ~/.claude/CLAUDE.md` |
+| 🇺🇸 English | [`languages/en/`](languages/en/) | ko, ja, zh, es, fr, de, pt, vi, th, ar |
+| 🇰🇷 Korean | [`languages/ko/`](languages/ko/) | en, ja, zh, es, fr, de, pt, vi, th, ar |
+| 🇯🇵 Japanese | [`languages/ja/`](languages/ja/) | en, ko, zh, es, fr, de, pt, vi, th, ar |
+| 🇨🇳 Chinese | [`languages/zh/`](languages/zh/) | en, ko, ja, es, fr, de, pt, vi, th, ar |
+| 🇪🇸 Spanish | [`languages/es/`](languages/es/) | en, ko, ja, zh, fr, de, pt, vi, th, ar |
+| 🇫🇷 French | [`languages/fr/`](languages/fr/) | en, ko, ja, zh, es, de, pt, vi, th, ar |
+| 🇩🇪 German | [`languages/de/`](languages/de/) | en, ko, ja, zh, es, fr, pt, vi, th, ar |
+| 🇵🇹 Portuguese | [`languages/pt/`](languages/pt/) | en, ko, ja, zh, es, fr, de, vi, th, ar |
+| 🇻🇳 Vietnamese | [`languages/vi/`](languages/vi/) | en, ko, ja, zh, es, fr, de, pt, th, ar |
+| 🇹🇭 Thai | [`languages/th/`](languages/th/) | en, ko, ja, zh, es, fr, de, pt, vi, ar |
+| 🇸🇦 Arabic | [`languages/ar/`](languages/ar/) | en, ko, ja, zh, es, fr, de, pt, vi, th |
 
-### Step 2: That's it. Start using Claude Code.
+**110 language pairs** are ready to use.
+
+### Step 2: Copy the file for your pair
+
+```bash
+# Example: Korean speaker learning English
+cp languages/ko/to-en.md ~/.claude/CLAUDE.md
+
+# Example: English speaker learning Japanese
+cp languages/en/to-ja.md ~/.claude/CLAUDE.md
+
+# Example: Japanese speaker learning Korean
+cp languages/ja/to-ko.md ~/.claude/CLAUDE.md
+```
+
+### Step 3: That's it. Start using Claude Code.
 
 Every conversation now includes passive language learning. No extra setup needed.
 
@@ -80,7 +96,7 @@ Every conversation now includes passive language learning. No extra setup needed
 If you already have a `~/.claude/CLAUDE.md`, append the rule instead:
 
 ```bash
-cat languages/ko/CLAUDE.md >> ~/.claude/CLAUDE.md
+cat languages/ko/to-en.md >> ~/.claude/CLAUDE.md
 ```
 
 ## Other AI Tools
