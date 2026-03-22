@@ -320,6 +320,16 @@ The core mechanism is simple — two rules:
 
 That's it. No complex setup. No dependencies. Just copy → paste → learn.
 
+## Star History
+
+<a href="https://star-history.com/#tykimos/Forced-Language-Learning-Prompt&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=tykimos/Forced-Language-Learning-Prompt&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=tykimos/Forced-Language-Learning-Prompt&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=tykimos/Forced-Language-Learning-Prompt&type=Date" />
+ </picture>
+</a>
+
 ## Contributing
 
 Want to add a new language? Create `{native}-{target}.md` in `languages/` and open a PR.
