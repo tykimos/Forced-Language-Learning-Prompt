@@ -52,35 +52,35 @@ No judgment. No red marks. Just a better version right next to yours.
 
 ### Step 1: Find your language pair
 
-Browse the [`languages/`](languages/) folder. Folders are organized by **your native language**:
+Browse the [`languages/`](languages/) folder. Files are named `{native}-{target}.md`:
 
-| I speak... | Folder | Available targets |
+| I speak... | I want to learn... | File |
 |---|---|---|
-| 🇺🇸 English | [`languages/en/`](languages/en/) | ko, ja, zh, es, fr, de, pt, vi, th, ar |
-| 🇰🇷 Korean | [`languages/ko/`](languages/ko/) | en, ja, zh, es, fr, de, pt, vi, th, ar |
-| 🇯🇵 Japanese | [`languages/ja/`](languages/ja/) | en, ko, zh, es, fr, de, pt, vi, th, ar |
-| 🇨🇳 Chinese | [`languages/zh/`](languages/zh/) | en, ko, ja, es, fr, de, pt, vi, th, ar |
-| 🇪🇸 Spanish | [`languages/es/`](languages/es/) | en, ko, ja, zh, fr, de, pt, vi, th, ar |
-| 🇫🇷 French | [`languages/fr/`](languages/fr/) | en, ko, ja, zh, es, de, pt, vi, th, ar |
-| 🇩🇪 German | [`languages/de/`](languages/de/) | en, ko, ja, zh, es, fr, pt, vi, th, ar |
-| 🇵🇹 Portuguese | [`languages/pt/`](languages/pt/) | en, ko, ja, zh, es, fr, de, vi, th, ar |
-| 🇻🇳 Vietnamese | [`languages/vi/`](languages/vi/) | en, ko, ja, zh, es, fr, de, pt, th, ar |
-| 🇹🇭 Thai | [`languages/th/`](languages/th/) | en, ko, ja, zh, es, fr, de, pt, vi, ar |
-| 🇸🇦 Arabic | [`languages/ar/`](languages/ar/) | en, ko, ja, zh, es, fr, de, pt, vi, th |
+| 🇰🇷 Korean | 🇺🇸 English | [`ko-en.md`](languages/ko-en.md) |
+| 🇺🇸 English | 🇰🇷 Korean | [`en-ko.md`](languages/en-ko.md) |
+| 🇯🇵 Japanese | 🇺🇸 English | [`ja-en.md`](languages/ja-en.md) |
+| 🇺🇸 English | 🇯🇵 Japanese | [`en-ja.md`](languages/en-ja.md) |
+| 🇨🇳 Chinese | 🇺🇸 English | [`zh-en.md`](languages/zh-en.md) |
+| 🇺🇸 English | 🇨🇳 Chinese | [`en-zh.md`](languages/en-zh.md) |
+| 🇰🇷 Korean | 🇯🇵 Japanese | [`ko-ja.md`](languages/ko-ja.md) |
+| 🇯🇵 Japanese | 🇰🇷 Korean | [`ja-ko.md`](languages/ja-ko.md) |
+| 🇪🇸 Spanish | 🇺🇸 English | [`es-en.md`](languages/es-en.md) |
+| 🇫🇷 French | 🇺🇸 English | [`fr-en.md`](languages/fr-en.md) |
+| ... | ... | [See all 110 pairs →](languages/) |
 
-**110 language pairs** are ready to use.
+**110 language pairs** across 11 languages — every combination covered.
 
-### Step 2: Copy the file for your pair
+### Step 2: Copy to `~/.claude/CLAUDE.md`
 
 ```bash
-# Example: Korean speaker learning English
-cp languages/ko/to-en.md ~/.claude/CLAUDE.md
+# Korean speaker learning English
+cp languages/ko-en.md ~/.claude/CLAUDE.md
 
-# Example: English speaker learning Japanese
-cp languages/en/to-ja.md ~/.claude/CLAUDE.md
+# English speaker learning Japanese
+cp languages/en-ja.md ~/.claude/CLAUDE.md
 
-# Example: Japanese speaker learning Korean
-cp languages/ja/to-ko.md ~/.claude/CLAUDE.md
+# Japanese speaker learning Korean
+cp languages/ja-ko.md ~/.claude/CLAUDE.md
 ```
 
 ### Step 3: That's it. Start using Claude Code.
@@ -96,7 +96,7 @@ Every conversation now includes passive language learning. No extra setup needed
 If you already have a `~/.claude/CLAUDE.md`, append the rule instead:
 
 ```bash
-cat languages/ko/to-en.md >> ~/.claude/CLAUDE.md
+cat languages/ko-en.md >> ~/.claude/CLAUDE.md
 ```
 
 ## Other AI Tools
