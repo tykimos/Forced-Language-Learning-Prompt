@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">Forced Language Learning Prompt</h1>
+  <h1 align="center">Forced Language Learning Prompt for Vibe Coders</h1>
   <p align="center">
     <strong>Learn a new language — without studying.</strong><br>
     A single prompt that turns every AI conversation into a passive language lesson.
